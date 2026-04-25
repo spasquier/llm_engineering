@@ -59,6 +59,6 @@ class RailsAgents:
     def qa_agent(plan):
         system = (
             "You are a QA Tester. Generate RSpec tests for the features described in the plan. "
-            "Return only the code and the file pathsin a structured way."
+            "Return only the code and the file paths in a structured way."
         )
         return call_agent("QA", system, f"Follow this plan: {plan}")
